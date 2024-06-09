@@ -1,4 +1,4 @@
-# Calculadora java
+# Calculadora Java 
 
 Criei a calculadora para treinar um pouco de Java básico.
 
@@ -6,4 +6,6 @@ Apesar de ser bem básico, estou feliz, pois já consigo criar algumas coisas se
 
 E vamos avançando...
 
-![foguete](https://c.tenor.com/x-HMKdm4KAoAAAAC/foguete-ponto-focal-foguete.gif)
+*Atualização em 09/06/24*
+
+Revisão do código utilizando ChatGPT.
