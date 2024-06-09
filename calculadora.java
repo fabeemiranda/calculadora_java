@@ -1,11 +1,8 @@
-package br.com.letscode.java;
-
 import java.util.Scanner;
 
+public class Calculadora {
 
-public class Main {
-
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Digite o primeiro número:");
@@ -26,10 +23,15 @@ public class Main {
                 System.out.println(multiplicacao(num1, num2));
                 break;
             case 4:
-                System.out.println(divisao(num1, num2));
+                // Verifica se num2 é 0 antes de realizar a divisão
+                if (num2 != 0) {
+                    System.out.println(divisao(num1, num2));
+                } else {
+                    System.out.println("Erro: divisão por zero!");
+                }
                 break;
             default:
-                System.out.println("Algo deu errado!!");
+                System.out.println("Operação inválida!");
         }
 
     }
@@ -37,15 +39,17 @@ public class Main {
     public static int soma(int a, int b) {
         return a + b;
     }
+
     public static int subtracao(int a, int b) {
         return a - b;
     }
+
     public static int multiplicacao(int a, int b) {
         return a * b;
     }
-    public static float divisao(float a, float b) {
-        return a / b;
-    }
-    
 
+    public static float divisao(int a, int b) {
+        // Converte os inteiros para float antes de dividir
+        return (float) a / b;
+    }
 }
